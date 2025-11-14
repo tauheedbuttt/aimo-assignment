@@ -1,6 +1,6 @@
 export interface FilterType {
-  country?: string;
-  users?: number;
+  nat?: string;
+  results?: number;
 }
 
 export interface DateOfBirth {
@@ -20,4 +20,16 @@ export interface IUser {
   };
   phone: string;
   petImage: string;
+}
+
+export interface ApiError {
+  response: {
+    data: {
+      timestamp: string;
+      status: number;
+      error: string;
+      message: string;
+      path: string;
+    };
+  };
 }

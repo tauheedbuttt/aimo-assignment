@@ -2,7 +2,7 @@ import axios from "axios";
 import type { FilterType } from "../types";
 
 const instance = axios.create({
-  baseURL: "http://localhost:4000",
+  baseURL: "http://localhost:8080",
 });
 
 export const fetchUsers = async (filters: FilterType) => {

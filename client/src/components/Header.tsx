@@ -4,7 +4,7 @@ import { UsersIcon } from "../assets";
 import type { FormikProps } from "formik";
 
 interface HeaderProps {
-  results: number;
+  results?: number;
   formik: FormikProps<FilterType>;
 }
 
@@ -19,11 +19,11 @@ const Header = ({ results, formik }: HeaderProps) => {
   const fields: Partial<InputProps>[] = [
     {
       label: "Country",
-      name: "country",
+      name: "nat",
       variant: "select",
       options: countries,
     },
-    { label: "Number of Users to Fetch", name: "users", type: "number" },
+    { label: "Number of Users to Fetch", name: "results", type: "number" },
   ];
 
   return (
@@ -64,10 +64,12 @@ const Header = ({ results, formik }: HeaderProps) => {
             Fetch Data
           </button>
           {/* Results */}
-          <span className="font-light whitespace-nowrap">
-            Showing
-            <span className="font-bold"> {results}</span> users
-          </span>
+          {results && (
+            <span className="font-light whitespace-nowrap">
+              Showing
+              <span className="font-bold"> {results}</span> users
+            </span>
+          )}
         </div>
       </form>
     </div>

@@ -1,0 +1,13 @@
+/Users/mac/Documents/code/aimo-assignment/server/src/main/java/com/aimoassignment/MyApplication.java
+/Users/mac/Documents/code/aimo-assignment/server/src/main/java/com/aimoassignment/config/CorsConfig.java
+/Users/mac/Documents/code/aimo-assignment/server/src/main/java/com/aimoassignment/controllers/UserController.java
+/Users/mac/Documents/code/aimo-assignment/server/src/main/java/com/aimoassignment/entities/Dob.java
+/Users/mac/Documents/code/aimo-assignment/server/src/main/java/com/aimoassignment/entities/DogImage.java
+/Users/mac/Documents/code/aimo-assignment/server/src/main/java/com/aimoassignment/entities/ErrorResponse.java
+/Users/mac/Documents/code/aimo-assignment/server/src/main/java/com/aimoassignment/entities/RandomUser.java
+/Users/mac/Documents/code/aimo-assignment/server/src/main/java/com/aimoassignment/entities/RandomUserResponse.java
+/Users/mac/Documents/code/aimo-assignment/server/src/main/java/com/aimoassignment/entities/User.java
+/Users/mac/Documents/code/aimo-assignment/server/src/main/java/com/aimoassignment/exceptions/ApiException.java
+/Users/mac/Documents/code/aimo-assignment/server/src/main/java/com/aimoassignment/exceptions/GlobalExceptionHandler.java
+/Users/mac/Documents/code/aimo-assignment/server/src/main/java/com/aimoassignment/services/ExternalApiService.java
+/Users/mac/Documents/code/aimo-assignment/server/src/main/java/com/aimoassignment/services/UserService.java

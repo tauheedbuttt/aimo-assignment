@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: aimo-assignment
+  external:
+    random-user-api:
+      url: https://randomuser.me
+    random-dog-image-api:
+      url: https://dog.ceo

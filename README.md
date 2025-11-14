@@ -2,6 +2,20 @@
 
 This project consists of a React frontend client and a Spring Boot backend server.
 
+## Learning Experience & Challenges
+
+Java Spring Boot was super interesting to learn, especially understanding how to set up REST APIs. I followed the intro and getting started documentation from the official Java Spring Boot site and watched YouTube tutorials on how to set up files and infrastructure.
+
+Key learnings included:
+
+- **Annotations**: How they resonate with NestJS decorators and provide powerful configuration capabilities
+- **Configuration Management**: Different ways to set up application configuration and properties
+- **DTOs and Parameters**: Proper data transfer object patterns and parameter handling
+- **Controllers and Services**: Following the MVC pattern, which is almost the same as NestJS but with Java-specific implementations
+- **REST API Architecture**: Understanding Spring Boot's approach to building RESTful services
+
+The most challenging aspects were getting familiar with Java syntax coming from a JavaScript/TypeScript background and understanding the Spring Boot ecosystem and its conventions.
+
 ## Prerequisites
 
 - Node.js (for the client)

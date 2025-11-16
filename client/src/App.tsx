@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useFormik } from "formik";
 import Header from "./components/Header";
 import User from "./components/User";
@@ -7,6 +7,7 @@ import { type ApiError, type FilterType, type IUser } from "./types";
 import { filterValidationSchema } from "./validations";
 
 const App = () => {
+  const queryClient = useQueryClient();
   const formik = useFormik<FilterType>({
     initialValues: {
       nat: "",
@@ -14,6 +15,7 @@ const App = () => {
     },
     validationSchema: filterValidationSchema,
     onSubmit: () => {
+      queryClient.invalidateQueries({ queryKey: ["users"] });
       refetch();
     },
   });

@@ -1,6 +1,7 @@
 import type { FilterType } from "../types";
 import Input, { type InputProps, type Options } from "./Input";
 import { UsersIcon } from "../assets";
+import { countries as baseCountries } from "../libs/data";
 import type { FormikProps } from "formik";
 
 interface HeaderProps {
@@ -9,9 +10,10 @@ interface HeaderProps {
 }
 
 const Header = ({ results, formik }: HeaderProps) => {
-  const countries: Options[] = ["All Countries"].map((item) => ({
-    label: item,
-    value: item,
+  const allCountries: Options = { label: "All Countries", value: "" };
+  const countries: Options[] = baseCountries.map((item) => ({
+    label: item.name,
+    value: item.code,
   }));
 
   const { values, handleChange, handleSubmit, touched, errors } = formik;
@@ -21,7 +23,7 @@ const Header = ({ results, formik }: HeaderProps) => {
       label: "Country",
       name: "nat",
       variant: "select",
-      options: countries,
+      options: [...countries, allCountries],
     },
     { label: "Number of Users to Fetch", name: "results", type: "number" },
   ];
